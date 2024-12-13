@@ -1,5 +1,15 @@
 {
-    "rewrites": [
-        {"source": "/(.*)", "destination": "/signin",}
-    ]
-}s
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/signin",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ]
+}
